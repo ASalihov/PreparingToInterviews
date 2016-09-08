@@ -32,6 +32,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>AkmalCompany.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -42,10 +48,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AS_and_IS.cs" />
+    <Compile Include="cl.cs" />
+    <Compile Include="ConvertionOperatorsOverloading.cs" />
+    <Compile Include="Custom_Object_Comparison.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Method_Parameter_Modifiers.cs" />
+    <Compile Include="PartialMethods.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Value_And_Reference_Types.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AkmalCompany.snk" />
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
