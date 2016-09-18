@@ -4,12 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PreparingToInterviews.Generics
+namespace PreparingToInterviews
 {
     public class GenericsService
     {
         public GenericsService()
         {
+            DisplayVarianceStuff();
+        }
+
+        private void DisplayVarianceStuff()
+        {
+            IVariance<D, B> d = new Variance();
+            //Console.WriteLine(d.retunT().ToString());
+
+            //IVariance<D, D> b = d;
+            //Console.WriteLine(b.retunT().ToString());
 
         }
 
@@ -18,5 +28,7 @@ namespace PreparingToInterviews.Generics
             var gen = new Generics<Human>();
             Generics<Human>.SameDataLinkedList();
         }
+
+
     }
 }
