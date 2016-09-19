@@ -63,7 +63,13 @@ namespace PreparingToInterviews
     {
         static void Main(string[] args)
         {
-
+            string StrGuid1 = "f659b9c3-4611-48cb-a7cb-91492a769e9c";
+            string StrGuid2 = "1f3ad326-effd-4ac3-a3e2-957e7def3684";
+            
+            if(Guid.Parse(StrGuid1) != Guid.Empty && Guid.Parse(StrGuid2) != Guid.Empty)
+            {
+                Console.WriteLine("StrGuid1 - " + Guid.Parse(StrGuid1) + "; StrGuid2 - " + Guid.Parse(StrGuid2));
+            }
             var bitArr = new BitArray(18);
             bitArr[9] = true;
             var bbb = bitArr[8];
