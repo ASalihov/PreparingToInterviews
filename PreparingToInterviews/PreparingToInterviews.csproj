@@ -55,6 +55,8 @@
     <Compile Include="Delegates and Anonymus Types\Delegates.cs" />
     <Compile Include="Delegates and Anonymus Types\DelegatesService.cs" />
     <Compile Include="Entities.cs" />
+    <Compile Include="Enums\EnumsService.cs" />
+    <Compile Include="Enums\TestEnum.cs" />
     <Compile Include="Events\EventsService.cs" />
     <Compile Include="Extensions\ExtensionsService.cs" />
     <Compile Include="Fun With Types\Fun With Types.cs" />
