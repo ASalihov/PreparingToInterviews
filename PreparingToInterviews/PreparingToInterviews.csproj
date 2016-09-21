@@ -52,6 +52,8 @@
     <Compile Include="CodeExamples\CodeExamplesService.cs" />
     <Compile Include="CodeExamples\FizzBuzz.cs" />
     <Compile Include="CodeExamples\GetBinaryString.cs" />
+    <Compile Include="Collections\CollectionsService.cs" />
+    <Compile Include="Collections\Dictionaries.cs" />
     <Compile Include="Delegates and Anonymus Types\Delegates.cs" />
     <Compile Include="Delegates and Anonymus Types\DelegatesService.cs" />
     <Compile Include="Entities.cs" />
