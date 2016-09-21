@@ -33,15 +33,6 @@ namespace PreparingToInterviews
             d.Born = DateTime.Now.AddYears(-25);
         }
 
-        public void anotherMethod<T>(IEnumerable<T> o)
-        {
-            foreach (var item in o)
-            {
-                Console.WriteLine("!!!!!!!!!!!!!!!!" + Environment.NewLine);
-                Console.WriteLine(item);
-                Console.WriteLine("!!!!!!!!!!!!!!!!" + Environment.NewLine);
-            }
-        }
 
     }
 }
