@@ -14,7 +14,7 @@ namespace PreparingToInterviews
         {
 
             //var service = new GenericService<GenericsService>();
-            var service = new GenericService<StringAndCharsService>();
+            var service = new GenericService<EnumsService>();
 
             Console.ReadLine();
         }
