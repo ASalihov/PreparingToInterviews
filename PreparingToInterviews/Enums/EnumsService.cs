@@ -10,7 +10,15 @@ namespace PreparingToInterviews
     {
         public EnumsService()
         {
-            DisplaySomeStuff();
+            FunWithFlags();
+            //DisplaySomeStuff();
+        }
+
+        private void FunWithFlags()
+        {
+            var days = DaysOfWeek.monday | DaysOfWeek.sunday | DaysOfWeek.tuesday;
+            Console.WriteLine(days);
+            Console.WriteLine(days & DaysOfWeek.thursday);
         }
 
         private void DisplaySomeStuff()
