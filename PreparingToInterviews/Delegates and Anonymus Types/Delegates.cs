@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace PreparingToInterviews
 {
+
+    internal delegate void Feedback(Int32 value); 
+
     public class Delegates
     {
         public static int SomeMeth(int x)
