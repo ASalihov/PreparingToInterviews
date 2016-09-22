@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace PreparingToInterviews
 {
-    public enum TestEnum : byte
+    abstract class Factory
     {
-        one = 1,
-        two = 2
+        public abstract Int32 DoSome();
     }
 }

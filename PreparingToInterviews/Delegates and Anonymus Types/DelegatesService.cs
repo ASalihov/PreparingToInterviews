@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
@@ -15,10 +16,26 @@ namespace PreparingToInterviews
             //InstanceDelegateDemo();
             //ChanDelegateDemo1(new DelegatesService(false));
             //ChanDelegateDemo2(new DelegatesService(false));
-
+            //ChangeDelegateDemo3();
+            ChangeDelegateDemo4();
         }
 
         #region Richter delegates example
+
+        private void ChangeDelegateDemo4()
+        {
+            Counter2(1, 3, (Int32 del, Int32 del2) => { return $"Console.WriteLine({del} + -  + {del2}))"; });
+        }
+
+        private void ChangeDelegateDemo3()
+        {
+            Feedback fbchain = null;
+            fbchain += FeedbackToConsole1;
+            fbchain += FeedbackToConsole2;
+            fbchain += FeedbackToConsole3;
+
+            Counter(1, 3, fbchain);
+        }
 
         private void ChanDelegateDemo2(DelegatesService p)
         {
@@ -84,6 +101,16 @@ namespace PreparingToInterviews
                 }
             }
         }
+        private static void Counter2(Int32 from, Int32 to, Feedback2 fb)
+        {
+            for (int i = from; i <= to; i++)
+            {
+                if (fb != null)
+                {
+                    Console.WriteLine(fb(i, i+100));
+                }
+            }
+        }
 
         private static void FeedbackToConsole1(Int32 val)
         {
@@ -102,6 +129,9 @@ namespace PreparingToInterviews
 
         private void DisplaySomeStuff()
         {
+
+            List<Movie> m = new List<Movie>();
+            m.ForEach(mov => Console.WriteLine(mov.Director));
             Delegates.ShowInfo(1, Delegates.SomeMeth);
         }
 

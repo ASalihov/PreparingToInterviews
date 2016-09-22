@@ -15,6 +15,11 @@ namespace PreparingToInterviews
 
         private void DisplaySomeStuff()
         {
+            TestEnum c;
+            Enum.TryParse("2", false, out c);
+            Console.WriteLine("C - " + c);
+
+
             var en = (short)TestEnum.one;
             Console.WriteLine(Enum.GetUnderlyingType(typeof(TestEnum)));
         }

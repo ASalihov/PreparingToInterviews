@@ -56,6 +56,7 @@
     <Compile Include="Collections\Dictionaries.cs" />
     <Compile Include="Delegates and Anonymus Types\Delegates.cs" />
     <Compile Include="Delegates and Anonymus Types\DelegatesService.cs" />
+    <Compile Include="DesignPatterns\Factory\Factory.cs" />
     <Compile Include="Entities.cs" />
     <Compile Include="Enums\EnumsService.cs" />
     <Compile Include="Enums\TestEnum.cs" />

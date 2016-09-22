@@ -8,6 +8,7 @@ namespace PreparingToInterviews
 {
 
     internal delegate void Feedback(Int32 value); 
+    internal delegate string Feedback2(Int32 value, Int32 value2);
 
     public class Delegates
     {

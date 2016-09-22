@@ -17,7 +17,6 @@ namespace PreparingToInterviews.Events
         {
             var mm = new MailManager();
             mm.NewMail += Fax.On_newmail;
-            mm.NewMail += Phone.On_newmail;
             mm.SimulateNewMail("SENDER", "RECIPIENT");
         }
     }
