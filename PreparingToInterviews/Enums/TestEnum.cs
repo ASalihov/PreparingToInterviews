@@ -20,7 +20,16 @@ namespace PreparingToInterviews
         tuesday = 4,
         wednesday = 8,
         thursday = 16,
-        friday = 31,
+        friday = 32,
         saturday = 64
+    }
+
+    public static class DaysOfWeekExtension
+    {
+        public static void Ext(this DaysOfWeek daysOfWeek)
+        {
+            Console.WriteLine(daysOfWeek + " + extension string!");
+        }
+
     }
 }

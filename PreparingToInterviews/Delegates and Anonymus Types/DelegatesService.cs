@@ -24,7 +24,7 @@ namespace PreparingToInterviews
 
         private void ChangeDelegateDemo4()
         {
-            Counter2(1, 3, (Int32 del, Int32 del2) => { return $"Console.WriteLine({del} + -  + {del2}))"; });
+            //Counter2(1, 3, (Int32 del, Int32 del2) => { return $"Console.WriteLine({del} + -  + {del2}))"; });
         }
 
         private void ChangeDelegateDemo3()
