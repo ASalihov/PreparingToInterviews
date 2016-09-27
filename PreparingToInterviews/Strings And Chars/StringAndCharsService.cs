@@ -12,11 +12,12 @@ namespace PreparingToInterviews
         Display wr = new Display(Console.WriteLine);
         public StringAndCharsService()
         {
-            IFormatProvider();
+            //IFormatProvider();
             //StringBuilder();
             //CompareStrings();
             //UseSpeciaCharacters;
             //DispayStringStuff();
+            DispayCharStuff();
         }
 
         private void IFormatProvider()
@@ -57,6 +58,10 @@ namespace PreparingToInterviews
 
         private void DispayCharStuff()
         {
+            for (int i = 65; i < 65+7; i++)
+            {
+                Console.WriteLine(i + " is " + (char)i);
+            }
             var inst = new Strings_And_Chars();
 
             var c = unchecked ((Char)65);

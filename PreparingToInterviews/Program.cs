@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Runtime.InteropServices;
-using System.Reflection;
 
 namespace PreparingToInterviews
 {
@@ -14,7 +8,7 @@ namespace PreparingToInterviews
         {
 
             //var service = new GenericService<GenericsService>();
-            var service = new GenericService<EnumsService>();
+            var service = new GenericService<StringAndCharsService>();
 
             Console.ReadLine();
         }
