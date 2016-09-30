@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+
+
+
+    <table border="1">
+        @for (int i = 1; i <= 8; i++)
+        {
+            var tr_style = i % 2 == 0 ? 0 : 1;
+            <tr>
+                @for (int y = i; y < 8+i; y++)
+                {
+                    var td_style = (y % 2 == 0) ? "b" : "w";
+                    <td class="@td_style"></td>
+                }
+            </tr>
+        }
+    </table>
+</div>

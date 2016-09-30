@@ -10,15 +10,31 @@ namespace PreparingToInterviews
     {
         public EnumsService()
         {
-            FunWithFlags();
+            EnumExtensionMeth();
+            //FunWithFlags();
             //DisplaySomeStuff();
         }
 
+        private void EnumExtensionMeth()
+        {
+            var en = DaysOfWeek.friday;
+            en.Ext();
+        }
+
+
+
         private void FunWithFlags()
         {
-            var days = DaysOfWeek.monday | DaysOfWeek.sunday | DaysOfWeek.tuesday;
-            Console.WriteLine(days);
-            Console.WriteLine(days & DaysOfWeek.thursday);
+            var days = DaysOfWeek.monday | DaysOfWeek.friday | DaysOfWeek.wednesday;
+            Console.WriteLine(days.ToString());
+            Console.WriteLine(days ^ DaysOfWeek.monday);
+            
+
+            days = days ^ DaysOfWeek.monday;
+            Console.WriteLine(days.ToString());
+            days = days | DaysOfWeek.saturday;
+            Console.WriteLine(days.ToString());
+
         }
 
         private void DisplaySomeStuff()

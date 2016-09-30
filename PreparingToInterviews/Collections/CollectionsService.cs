@@ -17,7 +17,7 @@ namespace PreparingToInterviews
         {
             var dict = new Dictionary<string, int>()
             {
-                ["123"] = 1
+                //["123"] = 1
             };
 
             //Console.WriteLine(dict.);
