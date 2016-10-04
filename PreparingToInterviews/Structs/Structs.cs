@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 namespace PreparingToInterviews
 {
     [StructLayout(LayoutKind.Explicit)]
-    public struct str
+    public struct MyStruct
     {
         public int getX { get { return x; } set { this.x = value; } }
         public int getY { get { return y; } set { this.y = value; } }
@@ -27,7 +27,7 @@ namespace PreparingToInterviews
     }
 
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct str1
+    public struct MyStruct1
     {
         public byte a; // 1 byte
         public int b; // 4 bytes
@@ -43,7 +43,7 @@ namespace PreparingToInterviews
         }
     }
 
-    public struct MyStruct1// : IEquatable<MyStruct1>
+    public struct MyStruct2// : IEquatable<MyStruct1>
     {
         /*
 
@@ -58,7 +58,7 @@ namespace PreparingToInterviews
         public int MyProperty1 { get; set; }
         public int MyProperty2 { get; set; }
 
-        public static bool operator ==(MyStruct1 ms1, MyStruct1 ms2)
+        public static bool operator ==(MyStruct2 ms1, MyStruct2 ms2)
         {
             if (ms1.MyProperty1 == ms2.MyProperty2)
             {
@@ -66,7 +66,7 @@ namespace PreparingToInterviews
             }
             return false;
         }
-        public static bool operator !=(MyStruct1 ms1, MyStruct1 ms2)
+        public static bool operator !=(MyStruct2 ms1, MyStruct2 ms2)
         {
             if (ms1.MyProperty1 != ms2.MyProperty2)
             {

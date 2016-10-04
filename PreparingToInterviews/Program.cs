@@ -14,7 +14,7 @@ namespace PreparingToInterviews
         {
 
             //var service = new GenericService<GenericsService>();
-            var service = new GenericService<AttributeService>();
+            var service = new GenericService<ExceptionsService>();
 
             Console.ReadLine();
         }

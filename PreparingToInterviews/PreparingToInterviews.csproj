@@ -64,6 +64,8 @@
     <Compile Include="Enums\EnumsService.cs" />
     <Compile Include="Enums\TestEnum.cs" />
     <Compile Include="Events\EventsService.cs" />
+    <Compile Include="Exceptions\CustomExceptionClass.cs" />
+    <Compile Include="Exceptions\ExceptionsService.cs" />
     <Compile Include="Extensions\ExtensionsService.cs" />
     <Compile Include="Fun With Types\Fun With Types.cs" />
     <Compile Include="Fun With Types\FunWithTypesService.cs" />

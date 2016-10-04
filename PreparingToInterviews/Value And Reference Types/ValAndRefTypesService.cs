@@ -15,7 +15,7 @@ namespace PreparingToInterviews
 
         private void ValAndRefTypesTest()
         {
-            str str = new str();
+            MyStruct str = new MyStruct();
             Int32 x = str.x;
             Console.WriteLine(x);
             Value_And_Reference_Types vrt = new Value_And_Reference_Types();
