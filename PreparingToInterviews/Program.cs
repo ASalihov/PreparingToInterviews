@@ -1,4 +1,6 @@
-﻿using System;
+﻿#define TEST_CONDITIONAL_COMPILAION
+using System;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,10 +15,13 @@ namespace PreparingToInterviews
         static void Main(string[] args)
         {
 
+            Debug.Fail("fuck off!!!", "off fuck!");
+#if TEST_CONDITIONAL_COMPILAION
             //var service = new GenericService<GenericsService>();
             var service = new GenericService<ExceptionsService>();
 
             Console.ReadLine();
+#endif
         }
 
     }

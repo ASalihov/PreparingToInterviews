@@ -38,6 +38,16 @@
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>AkmalCompany.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'FuckOff|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\FuckOff\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FuckOff</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -51,6 +61,11 @@
     <Compile Include="Attributes\AttributeService.cs" />
     <Compile Include="Attributes\Classes.cs" />
     <Compile Include="Attributes\CustomAttributes.cs" />
+    <Compile Include="Resources\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
     <Compile Include="CodeExamples\BitArrayIndexer%28Richter%29.cs" />
     <Compile Include="CodeExamples\CodeExamplesService.cs" />
     <Compile Include="CodeExamples\FizzBuzz.cs" />
@@ -86,6 +101,12 @@
     <Compile Include="Partial Classes and Methods\PartialsService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings1.cs" />
+    <Compile Include="Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings1.settings</DependentUpon>
+    </Compile>
     <Compile Include="Strings And Chars\Helpers.cs" />
     <Compile Include="Strings And Chars\StringAndCharsService.cs" />
     <Compile Include="Strings And Chars\Strings_And_Chars.cs" />
@@ -99,9 +120,25 @@
   <ItemGroup>
     <None Include="AkmalCompany.snk" />
     <None Include="App.config" />
+    <None Include="Settings1.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Reflection\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FuckOffOutputFolderPath.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FuckOffVersionMessage.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

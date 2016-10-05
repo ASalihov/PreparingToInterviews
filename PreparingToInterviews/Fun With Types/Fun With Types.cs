@@ -15,6 +15,20 @@ namespace PreparingToInterviews
             o = 2;
         }
     }
+
+    public class MyClassWithStaticMethod
+    {
+        public static int MyProperty { get; set; }
+
+        public static void MyStaticMethod()
+        {
+            if (MyProperty > 1)
+            {
+                Console.WriteLine("used prop!");
+            }
+        }
+    }
+
     public class Director
     {
         public DateTime Born { get; set; }
