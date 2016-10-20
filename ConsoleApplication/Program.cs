@@ -20,11 +20,13 @@ namespace ConsoleApplication
         {
             Band band = new Band()
             {
-                Name = "Metalica",
+                Name = "Dream Theatre",
                 GenreId = 1,
-                IsAcive = true
+                IsActive = true,
+                ModifiedOn = DateTime.Now,
+                CreatedOn = DateTime.Now
             };
-            using (var context = new Context())
+            using (var context = new ConsoleContext())
             {
                 context.Database.Log = Console.WriteLine;
                 context.Bands.Add(band);

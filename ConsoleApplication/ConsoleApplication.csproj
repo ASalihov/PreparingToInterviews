@@ -49,6 +49,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context.cs" />
+    <Compile Include="Migrations\201610201741065_InitialCreate.cs" />
+    <Compile Include="Migrations\201610201741065_InitialCreate.Designer.cs">
+      <DependentUpon>201610201741065_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610201750542_add_columns_to_the_band.cs" />
+    <Compile Include="Migrations\201610201750542_add_columns_to_the_band.Designer.cs">
+      <DependentUpon>201610201750542_add_columns_to_the_band.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -65,6 +75,14 @@
       <Project>{aa85818d-4943-4558-a9b6-6c39ccf64495}</Project>
       <Name>EFLEARN.RockBandsDomain.DataModel</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201610201741065_InitialCreate.resx">
+      <DependentUpon>201610201741065_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610201750542_add_columns_to_the_band.resx">
+      <DependentUpon>201610201750542_add_columns_to_the_band.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

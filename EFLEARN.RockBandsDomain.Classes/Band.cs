@@ -6,41 +6,19 @@ using System.Threading.Tasks;
 
 namespace EFLEARN.RockBandsDomain.Classes
 {
-    public class Band : IModificationHistory
+    public class Band
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public bool IsAcive { get; set; }
+        public bool IsActive { get; set; }
         public Genre Genre { get; set; }
         public int GenreId { get; set; }
         public IEnumerable<Musician> Mucisians { get; set; }
 
-        public DateTime CreatedOn
-        {
-        }
+        public DateTime CreatedOn { get; set; }
 
-        public DateTime ModifiedOn
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public DateTime ModifiedOn { get; set; }
 
-        public bool IsDirty
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public bool IsDirty { get; set; }
     }
 }
