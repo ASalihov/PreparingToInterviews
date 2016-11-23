@@ -20,6 +20,8 @@ namespace PreparingToInterviews
             ChangeDelegateDemo4();
         }
 
+
+
         #region Richter delegates example
 
         private void ChangeDelegateDemo4()

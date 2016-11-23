@@ -10,7 +10,15 @@ namespace PreparingToInterviews
     {
         public CollectionsService()
         {
-            FunWithDictionaries();
+            Arrays();
+            //FunWithDictionaries();
+        }
+
+        private void Arrays()
+        {
+            int[] arr = { 10, 20, 40 };
+            var res = arr.Aggregate(1000, (a, b) => { Console.WriteLine(a + " - " + b); return a - b; });
+            Console.WriteLine(res);
         }
 
         private void FunWithDictionaries()

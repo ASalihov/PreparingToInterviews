@@ -20,7 +20,7 @@ namespace ConsoleApplication
         {
             Band band = new Band()
             {
-                Name = "Metalica",
+                Name = "Metallica",
                 GenreId = 1,
                 IsAcive = true
             };

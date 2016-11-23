@@ -1,15 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreparingToInterviews", "PreparingToInterviews\PreparingToInterviews.csproj", "{D407681A-4FB9-4AB7-B57B-A01D3979FB97}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFLEARN.RockBandsDomain.DataModel", "EFLEARN.RockBandsDomain.DataModel\EFLEARN.RockBandsDomain.DataModel.csproj", "{AA85818D-4943-4558-A9B6-6C39CCF64495}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFLEARN.RockBandsDomain.Classes", "EFLEARN.RockBandsDomain.Classes\EFLEARN.RockBandsDomain.Classes.csproj", "{CCD82615-0BE4-4868-AF5D-9941B8EA2729}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication", "ConsoleApplication\ConsoleApplication.csproj", "{14F61555-18DA-4763-88C9-204CA21EC076}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,24 +18,6 @@ Global
 		{D407681A-4FB9-4AB7-B57B-A01D3979FB97}.FuckOff|Any CPU.Build.0 = FuckOff|Any CPU
 		{D407681A-4FB9-4AB7-B57B-A01D3979FB97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D407681A-4FB9-4AB7-B57B-A01D3979FB97}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AA85818D-4943-4558-A9B6-6C39CCF64495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA85818D-4943-4558-A9B6-6C39CCF64495}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA85818D-4943-4558-A9B6-6C39CCF64495}.FuckOff|Any CPU.ActiveCfg = Release|Any CPU
-		{AA85818D-4943-4558-A9B6-6C39CCF64495}.FuckOff|Any CPU.Build.0 = Release|Any CPU
-		{AA85818D-4943-4558-A9B6-6C39CCF64495}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA85818D-4943-4558-A9B6-6C39CCF64495}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CCD82615-0BE4-4868-AF5D-9941B8EA2729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CCD82615-0BE4-4868-AF5D-9941B8EA2729}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CCD82615-0BE4-4868-AF5D-9941B8EA2729}.FuckOff|Any CPU.ActiveCfg = Release|Any CPU
-		{CCD82615-0BE4-4868-AF5D-9941B8EA2729}.FuckOff|Any CPU.Build.0 = Release|Any CPU
-		{CCD82615-0BE4-4868-AF5D-9941B8EA2729}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CCD82615-0BE4-4868-AF5D-9941B8EA2729}.Release|Any CPU.Build.0 = Release|Any CPU
-		{14F61555-18DA-4763-88C9-204CA21EC076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{14F61555-18DA-4763-88C9-204CA21EC076}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{14F61555-18DA-4763-88C9-204CA21EC076}.FuckOff|Any CPU.ActiveCfg = Release|Any CPU
-		{14F61555-18DA-4763-88C9-204CA21EC076}.FuckOff|Any CPU.Build.0 = Release|Any CPU
-		{14F61555-18DA-4763-88C9-204CA21EC076}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{14F61555-18DA-4763-88C9-204CA21EC076}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

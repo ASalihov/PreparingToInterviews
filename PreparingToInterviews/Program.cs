@@ -14,7 +14,7 @@ namespace PreparingToInterviews
         static void Main(string[] args)
         {
             //var service = new GenericService<GenericsService>();
-            var service = new GenericService<ReflectionService>();
+            var service = new GenericService<AutomapperService>();
 
             Console.ReadLine();
         }

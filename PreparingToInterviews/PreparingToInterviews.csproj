@@ -49,6 +49,10 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=5.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.5.1.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -61,6 +65,10 @@
     <Compile Include="Attributes\AttributeService.cs" />
     <Compile Include="Attributes\Classes.cs" />
     <Compile Include="Attributes\CustomAttributes.cs" />
+    <Compile Include="Automapper\ClassesToMap.cs" />
+    <Compile Include="Automapper\CollectionsService.cs" />
+    <Compile Include="Automapper\Configuration.cs" />
+    <Compile Include="Automapper\Extensions.cs" />
     <Compile Include="Reflection\ReflectionService.cs" />
     <Compile Include="Resources\Resource1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -121,6 +129,7 @@
   <ItemGroup>
     <None Include="AkmalCompany.snk" />
     <None Include="App.config" />
+    <None Include="packages.config" />
     <None Include="Settings1.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings1.Designer.cs</LastGenOutput>

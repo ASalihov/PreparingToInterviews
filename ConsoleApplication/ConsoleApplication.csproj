@@ -56,16 +56,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\EFLEARN.RockBandsDomain.Classes\EFLEARN.RockBandsDomain.Classes.csproj">
-      <Project>{ccd82615-0be4-4868-af5d-9941b8ea2729}</Project>
-      <Name>EFLEARN.RockBandsDomain.Classes</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\EFLEARN.RockBandsDomain.DataModel\EFLEARN.RockBandsDomain.DataModel.csproj">
-      <Project>{aa85818d-4943-4558-a9b6-6c39ccf64495}</Project>
-      <Name>EFLEARN.RockBandsDomain.DataModel</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
